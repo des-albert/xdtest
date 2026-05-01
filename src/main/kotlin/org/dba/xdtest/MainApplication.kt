@@ -10,7 +10,7 @@ class MainApplication : Application() {
     override fun start(stage: Stage) {
         val fxmlLoader = FXMLLoader(MainApplication::class.java.getResource("main.fxml"))
         val scene = Scene(fxmlLoader.load(), 1000.0, 640.0)
-        val icon = Image(javaClass.getResourceAsStream("/img/XDTest.png"))
+        val icon = Image(javaClass.getResourceAsStream("/img/XDtest.png"))
         stage.icons.add(icon)
         stage.title = "XD 700 Config Check"
         stage.scene = scene
