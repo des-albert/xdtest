@@ -7,7 +7,6 @@ module org.dba.xdtest {
     requires org.apache.poi.ooxml;
     requires kotlinx.coroutines.core;
     requires kotlinx.coroutines.javafx;
-    requires java.prefs;
 
 
     opens org.dba.xdtest to javafx.fxml;
