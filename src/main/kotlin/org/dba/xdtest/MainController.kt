@@ -39,8 +39,8 @@ private val rackConfig = FileParseConfig(
 
 private val CDUConfig = FileParseConfig(
     sheetName = "XD 700",
-    firstRow = 33,
-    lastRow = 39,
+    firstRow = 49,
+    lastRow = 55,
     itemCol = 6,
     qtyCol = 7,
     skuCol = 8,
