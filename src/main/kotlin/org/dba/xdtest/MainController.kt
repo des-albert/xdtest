@@ -77,7 +77,7 @@ private val logger: Logger = LoggerFactory.getLogger("XD test")
 
 lateinit var sourceConfig: FileParseConfig
 
-private val configFilePath = "C:\\Users\\albertd\\OneDrive - Hewlett Packard Enterprise\\HPE\\Cray XD\\XD700 Config Builder v1.0.xlsx"
+private val configFilePath = "C:\\Users\\albertd\\OneDrive - Hewlett Packard Enterprise\\HPE\\Cray XD\\XD700 Config Builder v2.0.xlsx"
 private var sourceFile = File(configFilePath)
 
 private val diffList = mutableListOf<DiffResult>()
