@@ -37,10 +37,20 @@ private val rackConfig = FileParseConfig(
     solIDCol = 10
 )
 
-private val CDUConfig = FileParseConfig(
+private val MotivairConfig = FileParseConfig(
     sheetName = "XD 700",
-    firstRow = 49,
-    lastRow = 55,
+    firstRow = 33,
+    lastRow = 40,
+    itemCol = 6,
+    qtyCol = 7,
+    skuCol = 8,
+    solIDCol = 10
+)
+
+private val VertivConfig = FileParseConfig(
+    sheetName = "XD 700",
+    firstRow = 43,
+    lastRow = 49,
     itemCol = 6,
     qtyCol = 7,
     skuCol = 8,
@@ -49,8 +59,8 @@ private val CDUConfig = FileParseConfig(
 
 private val partsConfig = FileParseConfig(
     sheetName = "XD 700",
-    firstRow = 42,
-    lastRow = 47,
+    firstRow = 52,
+    lastRow = 57,
     itemCol = 6,
     qtyCol = 7,
     skuCol = 8,
@@ -116,7 +126,10 @@ class MainController {
     lateinit var radioParts: RadioButton
 
     @FXML
-    lateinit var radioCDU: RadioButton
+    lateinit var radioMotivairCDU: RadioButton
+
+    @FXML
+    lateinit var radioVertivCDU: RadioButton
 
     @FXML
     lateinit var confGroup: ToggleGroup
@@ -211,8 +224,12 @@ class MainController {
                 sourceConfig = rackConfig
             }
 
-            "CDU" -> {
-                sourceConfig = CDUConfig
+            "Motivair CDU" -> {
+                sourceConfig = MotivairConfig
+            }
+
+            "Vertiv CDU" -> {
+                sourceConfig = VertivConfig
             }
 
             "Parts" -> {

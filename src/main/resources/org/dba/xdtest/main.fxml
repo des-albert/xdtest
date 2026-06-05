@@ -19,7 +19,7 @@
         <Label fx:id="labelJDK" layoutX="574.0" layoutY="562.0" prefHeight="17.0" prefWidth="355.0" text="JavaSDK" />
         <Label fx:id="labelJavaFX" layoutX="574.0" layoutY="543.0" prefHeight="17.0" prefWidth="269.0" text="JavaFX" />
 
-        <Label fx:id="labelSourceFile" layoutX="127.0" layoutY="30.0" prefHeight="20.0" prefWidth="127.0" textFill="#1361f2">
+        <Label fx:id="labelSourceFile" layoutX="172.0" layoutY="34.0" prefHeight="35.0" prefWidth="199.0" textFill="#1361f2">
          <font>
             <Font size="24.0" />
          </font></Label>
@@ -29,13 +29,13 @@
             <Font size="18.0" />
          </font></Label>
 
-        <Button fx:id="buttonCompare" layoutX="521.0" layoutY="36.0" mnemonicParsing="false" onAction="#handleCompare" prefHeight="30.0" prefWidth="87.0" stylesheets="@../../../css/style.css" text="Compare" />
-        <Button fx:id="buttonTarget" layoutX="312.0" layoutY="36.0" mnemonicParsing="false" onAction="#handleOpenTargetFile" stylesheets="@../../../css/style.css" text="Select Target">
+        <Button fx:id="buttonCompare" layoutX="644.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleCompare" prefHeight="30.0" prefWidth="87.0" stylesheets="@../../../css/style.css" text="Compare" />
+        <Button fx:id="buttonTarget" layoutX="442.0" layoutY="36.0" mnemonicParsing="false" onAction="#handleOpenTargetFile" stylesheets="@../../../css/style.css" text="Select Target">
             <font>
                 <Font size="14.0" />
             </font>
         </Button>
-        <Button fx:id="buttonQuit" layoutX="682.0" layoutY="36.0" mnemonicParsing="false" onAction="#handleQuit" stylesheets="@../../../css/style.css" text="Quit" />
+        <Button fx:id="buttonQuit" layoutX="830.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleQuit" stylesheets="@../../../css/style.css" text="Quit" />
         <RadioButton fx:id="radioRack" layoutX="45.0" layoutY="30.0" mnemonicParsing="false" onAction="#sourceSelect" selected="true" stylesheets="@../../../css/style.css" text="Rack">
             <toggleGroup>
                 <ToggleGroup fx:id="confGroup" />
@@ -44,12 +44,17 @@
                 <Font size="14.0" />
             </font>
         </RadioButton>
-        <RadioButton fx:id="radioCDU" layoutX="45.0" layoutY="70.0" mnemonicParsing="false" onAction="#sourceSelect" stylesheets="@../../../css/style.css" text="CDU" toggleGroup="$confGroup">
+        <RadioButton fx:id="radioMotivairCDU" layoutX="45.0" layoutY="70.0" mnemonicParsing="false" onAction="#sourceSelect" stylesheets="@../../../css/style.css" text="Motivair CDU" toggleGroup="$confGroup">
             <font>
                 <Font size="14.0" />
             </font>
         </RadioButton>
-        <RadioButton fx:id="radioParts" layoutX="45.0" layoutY="110.0" mnemonicParsing="false" onAction="#sourceSelect" stylesheets="@../../../css/style.css" text="Parts" toggleGroup="$confGroup">
+        <RadioButton fx:id="radioVertivCDU" layoutX="45.0" layoutY="114.0" mnemonicParsing="false" onAction="#sourceSelect" stylesheets="@../../../css/style.css" text="Vertiv CDU" toggleGroup="$confGroup">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="radioParts" layoutX="44.0" layoutY="153.0" mnemonicParsing="false" onAction="#sourceSelect" stylesheets="@../../../css/style.css" text="Parts" toggleGroup="$confGroup">
             <font>
                 <Font size="14.0" />
             </font>
